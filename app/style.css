@@ -41,4 +41,9 @@
 .flex {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.padding {
+    padding: 10px;
 }
