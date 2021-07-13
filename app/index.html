@@ -7,20 +7,55 @@
     <title>Api</title>   
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col">
+        <div class="row bg-info">
+            <div class="col-2">
                 Weather
             </div>
-            <div class="col">
+            <div class="col-8">
                 <input type="text" placeholder="text">
             </div>
-            <div class="col">3</div>
+            <div class="col-2">
+                <button type="button" class="btn btn-outline-primary bg-info">Search</button>
+            </div>
         </div>
-        <div class="row">Content</div>
-        <div class="row">Footer</div>
+        <div class="row">
+
+            <div class="towns">
+                <a href="" class="washington" data-bs-toggle="tooltip" title="USA">Washington</a>
+                <a href="" class="brasilia" data-bs-toggle="tooltip" title="Brazil">Brasilia</a>
+                <a href="" class="london" data-bs-toggle="tooltip" title="Greit Britan">London</a>
+                <a href="" class="capetown" data-bs-toggle="tooltip" title="South Africa">Capetown</a>
+                <a href="" class="canberra" data-bs-toggle="tooltip" title="Australia">Canberra</a>
+                <a href="" class="tokyo" data-bs-toggle="tooltip" title="Japan">Tokyo</a>
+            </div>
+                
+            <img src="../img/123.png" alt="" style='max-width:760px'>
+        </div>
+        <br>
+        <div class="row bg-info flex">
+            <div class="card" style="width: 12rem;">
+                <img src="..//img/123.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 12rem;">
+                <img src="..//img/123.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 12rem;">
+                <img src="..//img/123.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

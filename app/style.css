@@ -1,0 +1,44 @@
+.london {
+    position: absolute;
+    top: 150px;
+    left: 330px;
+}
+
+.washington {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+.canberra {
+    position: absolute;
+    top: 410px;
+    left: 580px;
+}
+
+.brasilia {
+    position: absolute;
+    top: 400px;
+    left: 150px;
+}
+
+.tokyo {
+    position: absolute;
+    top: 220px;
+    left: 590px;
+}
+
+.capetown {
+    position: absolute;
+    top: 420px;
+    left: 330px;
+}
+
+.towns {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
