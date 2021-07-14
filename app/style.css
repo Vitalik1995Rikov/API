@@ -24,8 +24,8 @@ body {
 
 .brasilia {
     position: relative;
-    top: 400px;
-    left: 150px;
+    top: 80px;
+    left: -40px;
 }
 
 .tokyo {
@@ -71,6 +71,7 @@ input {
     border: none;
     border-radius: 10px;
     height: 40px;
+    padding: 10px;
 }
 
 button {
@@ -86,3 +87,11 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+   }
