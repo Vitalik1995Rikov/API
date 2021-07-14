@@ -1,67 +1,85 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app='myApp'>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Api</title>   
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <!-- <script src="api.js"></script> -->
+    <script src="module.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="row bg-info">
+        <div class="row bg-info rounded flex" style="height: 4rem;">
             <div class="col-2">
-                Weather
+                <img src="https://img.icons8.com/ios/24/000000/snowflake.png"/>
+                <span>Weather</span>
             </div>
-            <div class="col-8">
-                <input type="text" placeholder="text">
+            <div class="col-9">
+                <input placeholder="text" style="width: 100%">
             </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-outline-primary bg-info">Search</button>
+            <div class="col-1">
+                <button type="button">
+                    <img src="https://img.icons8.com/material-rounded/16/000000/search.png"/>
+                </button>
             </div>
         </div>
-        <div class="row">
-
+        
+        <div class="row center">
             <div class="towns">
                 <a href="" class="washington" data-bs-toggle="tooltip" title="USA">Washington</a>
                 <a href="" class="brasilia" data-bs-toggle="tooltip" title="Brazil">Brasilia</a>
-                <a href="" class="london" data-bs-toggle="tooltip" title="Greit Britan">London</a>
+                <a href="" class="london" data-bs-toggle="tooltip" title="Great Britain">London</a>
                 <a href="" class="capetown" data-bs-toggle="tooltip" title="South Africa">Capetown</a>
                 <a href="" class="canberra" data-bs-toggle="tooltip" title="Australia">Canberra</a>
                 <a href="" class="tokyo" data-bs-toggle="tooltip" title="Japan">Tokyo</a>
             </div>
-                
-            <img src="../img/123.png" alt="" style='max-width:760px'>
+                <img src="../img/world.png" alt="" style='width:800px'>
         </div>
+
         <br>
-        <div class="row bg-info flex padding">
-            <div class="card" style="width: 12rem; height: 18rem">
-                <div class="flex">
-                    <img src="https://img.icons8.com/ios/50/000000/windy-weather--v1.png" style="width: 5rem;" class="card-img-top" alt="...">
+
+        <div>
+            <div class="row flex">
+                    <div class="center" style='width: 100%'>
+                        <p>N Novgorog</p>
+                    </div> 
+                
+
+                <div class="card flex" style="width: 12rem; height: 16rem">
+                    <span>Yestarday</span>
+                    <div class="flex">
+                        <img src="https://img.icons8.com/ios/50/000000/windy-weather--v1.png" style="width: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="card flex" style="width: 12rem; height: 16rem">
+                    <span>Today</span>
+                    <div class="flex">
+                        <img src="https://img.icons8.com/office/80/000000/summer.png" style="width: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 12rem; height: 18rem">
-                <div class="flex">
-                    <img src="https://img.icons8.com/office/80/000000/summer.png" style="width: 5rem;" class="card-img-top" alt="...">
+                <div class="card flex" style="width: 12rem; height: 16rem">
+                    <span>Tomorrow</span>
+                    <div class="flex">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/rainy-weather.png" style="width: 5rem"; class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <div class="card " style="width: 12rem; height: 18rem">
-                <div class="flex">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/rainy-weather.png" style="width: 5rem"; class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+
             </div>
         </div>
+
     </div>
 </body>
 </html>

@@ -1,49 +1,88 @@
+body {
+    font-family: "Open Sans","Gill Sans MT","Gill Sans",sans-serif;
+    font-size: 16px;
+    background-color: #baedf5;
+}
+
 .london {
-    position: absolute;
-    top: 150px;
-    left: 330px;
+    position: relative;
+    top: -60px;
+    left: -30px;
 }
 
 .washington {
-    position: absolute;
-    top: 150px;
-    left: 100px;
+    position: relative;
+    top: -50px;
+    left: -40px;
 }
 
 .canberra {
-    position: absolute;
-    top: 410px;
-    left: 580px;
+    position: relative;
+    top: 130px;
+    left: 150px;
 }
 
 .brasilia {
-    position: absolute;
+    position: relative;
     top: 400px;
     left: 150px;
 }
 
 .tokyo {
-    position: absolute;
-    top: 220px;
-    left: 590px;
+    position: relative;
+    top: -20px;
+    left: 120px;
 }
 
 .capetown {
-    position: absolute;
-    top: 420px;
-    left: 330px;
+    position: relative;
+    top: 130px;
+    left: 50px;
 }
 
 .towns {
-    position: relative;
+    position: absolute;
 }
 
 .flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .padding {
     padding: 10px;
+}
+
+.margin {
+    margin: 10px;
+}
+
+.card {
+    background-color: #17a2b8;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+input {
+    background-color: #baedf5;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+}
+
+button {
+    background-color: #baedf5;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
