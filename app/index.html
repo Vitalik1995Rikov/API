@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,9 @@
     <title>Api</title>   
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <!-- <script src="api.js"></script> -->
-    <script src="position.js"></script>
-    <script src="myApp.js"></script>
+    <!-- <script src="position.js"></script> -->
+    <script src="myPosition.js"></script>
+    <!-- <script src="myApp.js"></script> -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -41,13 +42,12 @@
                 <img src="../img/world.png" alt="" style='width:800px'>
         </div>
         <div>
-            <div class="row flex">
+            <div class="row flex" ng-controller="myPosition">
                 <div class="location center" style='width: 100%'>
-                    <p ng-app="myApp">
-                        {{1 + 2}}
-                    <span ng-controller='myController'>
-                        {{object.query}}
-                    </span>
+                    <p>123
+                        <span>
+                            {{data.name}}
+                        </span>
                     </p>
                 </div> 
                 <div class="card flex" style="width: 11rem; height: 16rem">
