@@ -1,6 +1,12 @@
 let myApp = angular.module('myApp', []);
 
 myApp.controller('myPosition', function($scope) {
+    $scope.towns = [
+        "Wash",
+        "Lon",
+        "Ber"
+    ]
+    
     navigator.geolocation.getCurrentPosition(position => {
         const { latitude, longitude } = position.coords;
 
