@@ -1,4 +1,4 @@
-let myApp = angular.module('myApp', []);
+let myApp = angular.module('myApp', ['ngMaterial']);
 
 myApp.controller('myPosition', function($scope) {
         
@@ -9,10 +9,10 @@ myApp.controller('myPosition', function($scope) {
     fetch(url)
         .then(response => response.json())
         .then(result => {$scope.data = result})
-        .then(() => console.log($scope.data))
+        .then(() => console.log($scope.data.name))
     });
+    console.log($scope);
 });
-
 
 myApp.directive('weatherCard', function() {
     return {
