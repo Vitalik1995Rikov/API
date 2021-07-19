@@ -5,15 +5,15 @@ body {
 }
 
 .london {
-    position: relative;
-    top: -60px;
-    left: -30px;
+    position: absolute;
+    top: -30px;
+    left: 450px;
 }
 
 .washington {
     position: relative;
     top: -50px;
-    left: -40px;
+    left: 250px;
 }
 
 .canberra {
@@ -25,19 +25,19 @@ body {
 .brasilia {
     position: relative;
     top: 80px;
-    left: -40px;
+    left: 130px;
 }
 
 .tokyo {
     position: relative;
     top: -20px;
-    left: 120px;
+    left: -50px;
 }
 
 .capetown {
     position: relative;
     top: 130px;
-    left: 50px;
+    left: 105px;
 }
 
 .towns {
@@ -95,3 +95,10 @@ a {
 a:hover {
     text-decoration: none;
    }
+
+
+.img {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 8px;
+}
