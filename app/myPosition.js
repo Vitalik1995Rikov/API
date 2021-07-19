@@ -9,7 +9,7 @@ myApp.controller('myPosition', function($scope) {
     fetch(url)
         .then(response => response.json())
         .then(result => {$scope.data = result})
-        .then(() => console.log($scope.data.name))
+        .then(() => console.log($scope.data.weather[0]))
     });
     console.log($scope);
 });

@@ -4,6 +4,19 @@
         <img src='https://img.icons8.com/ios/50/000000/windy-weather--v1.png' style='width: 5rem;' class='card-img-top' alt='...'>
     </div>
     <div class='card-body'>
-        <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <label for="">Temperature:</label>
+        <span ng-bind="(data.main.temp - 273).toFixed(1)"></span>
+
+        <label for="">Humidity:</label>
+        <span ng-bind="(data.main.humidity)"></span>
+
+        <label for="">Pressure:</label>
+        <span ng-bind="(data.main.pressure)"></span>
+
+        <label for="">Visibility:</label>
+        <span ng-bind="(data.visibility)"></span>
+
+        <label for="">Visibility:</label>
+        <span ng-bind="(data.weather[0].icon)"></span>
     </div>
 </div>
