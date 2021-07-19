@@ -21,14 +21,14 @@ myApp.controller('myPosition', function($scope) {
 
 myApp.directive('weatherCard', function() {
     return {
-        templateUrl:  "templates/templateCard.html",
+        templateUrl:  "templates/templateWeatherCard.html",
     }
 });
 
 
 myApp.directive('townCard', function() {
     return {
-        template: "<a href='' data-bs-toggle='tooltip' title='USA'>Washington</a>"
+        templateUrl: "templates/templateTownCard.html",
     }
 });
 
