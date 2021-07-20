@@ -4,7 +4,9 @@ let myApp = angular.module('myApp', ['ngMaterial',
                                     'app.london',
                                     'app.washington',
                                     'app.tokyo',
-                                    'app.brasilia'
+                                    'app.brasilia',
+                                    'app.capetown',
+                                    'app.canberra'
                                 ]);
 
 

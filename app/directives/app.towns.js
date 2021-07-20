@@ -8,7 +8,6 @@ angular.module('app.towns').directive('townCard', function() {
                 fetch(url)
                     .then(response => response.json())
                     .then(result => {$scope.data = result})
-                    // .then(() => console.log($scope.data))
         }
     }
 });

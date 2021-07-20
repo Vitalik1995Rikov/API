@@ -9,7 +9,6 @@ angular.module('app.tokyo').directive('tokyoCard', function() {
                 fetch(url)
                     .then(response => response.json())
                     .then(result => {scope.data = result})
-                    .then(() => console.log(scope.data))
         }
     }
 });
