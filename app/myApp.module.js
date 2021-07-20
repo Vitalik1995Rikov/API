@@ -2,7 +2,9 @@ let myApp = angular.module('myApp', ['ngMaterial',
                                     'app.weather', 
                                     'app.towns', 
                                     'app.london',
-                                    'app.washington'
+                                    'app.washington',
+                                    'app.tokyo',
+                                    'app.brasilia'
                                 ]);
 
 
