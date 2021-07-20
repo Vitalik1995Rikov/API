@@ -18,6 +18,8 @@
     <script defer src="myApp.module.js"></script>
     <script src="directives/app.weather.js"></script>
     <script src="directives/app.towns.js"></script>
+    <script src="directives/app.london.js"></script>
+    <script src="directives/app.washington.js"></script>
     
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -41,9 +43,9 @@
         </div>
         <div class="row center">
             <div class="towns">
-                <town-card class="washington" ng-model="London"></town-card>
-                <town-card class="brasilia" ng-model="London"></town-card>
-                <town-card class="london"></town-card>
+                <washington-card class="washington"></washington-card>
+                <town-card class="brasilia"></town-card>
+                <london-card class="london"></london-card>
                 <town-card class="capetown"></town-card>
                 <town-card class="canberra"></town-card>
                 <town-card class="tokyo"></town-card>
