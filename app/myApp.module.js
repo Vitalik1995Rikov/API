@@ -1,4 +1,6 @@
-let myApp = angular.module('myApp', ['ngMaterial']);
+let myApp = angular.module('myApp', ['ngMaterial', 'app.weather', 'app.towns']);
+
+
 
 myApp.controller('myPosition', function($scope) {
         
@@ -14,17 +16,21 @@ myApp.controller('myPosition', function($scope) {
     console.log($scope);
 });
 
-myApp.directive('weatherCard', function() {
-    return {
-        templateUrl: "templates/templateWeatherCard.html",
-    }
-});
 
 
-myApp.directive('townCard', function() {
-    return {
-        templateUrl: "templates/templateTownCard.html",
-    }
-});
+// myApp.directive('weatherCard', function() {
+//     return {
+//         templateUrl: "templates/templateWeatherCard.html",
+//     }
+// });
+
+
+
+
+// myApp.directive('townCard', function() {
+//     return {
+//         templateUrl: "templates/templateTownCard.html",
+//     }
+// });
 
 
