@@ -51,7 +51,7 @@
                 <img src="../img/world.png" alt="" style='width:800px'>
         </div>
         <div>
-            <div class="row flex" ng-controller="myPosition">
+            <div class="row flex" ng-controller="fiveDays">
                 <div class="location center" style='width: 100%'>
                     <p>{{data.name}}
                         <span>
@@ -59,7 +59,7 @@
                         </span>
                     </p>
                 </div> 
-                <weather-card></weather-card>
+                <weather-card ng-model="data.daily[0].weather"></weather-card>
                 <weather-card></weather-card>
                 <weather-card></weather-card>
                 <weather-card></weather-card>
