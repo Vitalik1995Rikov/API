@@ -26,7 +26,7 @@ myApp.controller('fiveDays', function($scope) {
     fetch(url)
         .then(response => response.json())
         .then(result => {$scope.data = result})
-        .then(() => console.log($scope.data.daily[0].weather[0].icon))
+        .then(() => console.log($scope.data.current.dt))
     });
     console.log($scope)
 });

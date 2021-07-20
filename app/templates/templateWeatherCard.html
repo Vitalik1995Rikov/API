@@ -3,6 +3,20 @@
     <div class='card flex' style='width: 11rem; height: 16rem'>
         <span>Today</span>
         <div class='flex'>
+            <img src="http://openweathermap.org/img/wn/{{data.current.weather[0].icon}}@2x.png" alt="">
+        </div>
+        <div class='card-body'>
+            <label for="">Temperature:</label>
+            <span ng-bind="(data.current.temp.day - 273).toFixed(1)"></span>
+            <label for="">Humidity:</label>
+            <span ng-bind="(data.current.humidity)"></span>
+        </div>
+    </div>
+
+
+    <div class='card flex' style='width: 11rem; height: 16rem'>
+        <span>Tomorrow</span>
+        <div class='flex'>
             <img src="http://openweathermap.org/img/wn/{{data.daily[0].weather[0].icon}}@2x.png" alt="">
         </div>
         <div class='card-body'>
@@ -15,7 +29,7 @@
     
     
     <div class='card flex' style='width: 11rem; height: 16rem'>
-        <span>Tomorrow</span>
+        <span>After Tomorrow</span>
         <div class='flex'>
             <img src="http://openweathermap.org/img/wn/{{data.daily[1].weather[0].icon}}@2x.png" alt="">
         </div>
@@ -28,7 +42,7 @@
     </div>
     
     <div class='card flex' style='width: 11rem; height: 16rem'>
-        <span>Day after tomorrow</span>
+        <span>After after tomorrow</span>
         <div class='flex'>
             <img src="http://openweathermap.org/img/wn/{{data.daily[2].weather[0].icon}}@2x.png" alt="">
         </div>
@@ -39,6 +53,6 @@
             <span ng-bind="(data.daily[2].humidity)"></span>
         </div>
     </div>
-    
+
 </div>
 
