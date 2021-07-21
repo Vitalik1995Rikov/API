@@ -15,9 +15,11 @@
     <script src="lib/angular-aria/angular-aria.js"></script>
     <script src="lib/angular-messages/angular-messages.js"></script>
    
-    
     <script src="myApp.module.js"></script>
     <script src="directives/app.weather.js"></script>
+    <script src="directives/currentPlace.js"></script>
+
+
     <script src="directives/towns/app.london.js"></script>
     <script src="directives/towns/app.washington.js"></script>
     <script src="directives/towns/app.tokyo.js"></script>
@@ -25,9 +27,9 @@
     <script src="directives/towns/app.capetown.js"></script>
     <script src="directives/towns/app.canberra.js"></script>
     
-    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <div class="container">
@@ -57,14 +59,8 @@
                 <img src="../img/world.png" alt="" style='width:800px'>
         </div>
         <div>
-            <div class="row flex" ng-controller="fiveDays">
-                <div class="location center" style='width: 100%'>
-                    <p>{{data.name}}
-                        <span>
-                            {{(data.main.temp - 273).toFixed(1)}}
-                        </span>
-                    </p>
-                </div> 
+            <div ng-class="row">
+                <current-place></current-place>
                 <weather-card></weather-card>
             </div>
         </div>
