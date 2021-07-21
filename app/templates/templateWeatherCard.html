@@ -6,7 +6,7 @@
         </div>
         <div class='card-body'>
             <label for="">Temperature:</label>
-            <span ng-bind="(data.current.temp.day - 273).toFixed(1)"></span>
+            <span ng-bind="(data.current.temp - 273).toFixed(1)"></span>
             <label for="">Humidity:</label>
             <span ng-bind="(data.current.humidity)"></span>
         </div>
