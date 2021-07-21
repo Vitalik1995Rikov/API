@@ -3,7 +3,7 @@ angular.module('currentPlace', []);
 angular.module('currentPlace').directive('currentPlace', function() {
     return {
         scope: true,
-        templateUrl: "templates/templateCurrentPlace.html",
+        templateUrl: "templates/placeTemplate/templateCurrentPlace.html",
         
         link: function ($scope) {
             navigator.geolocation.getCurrentPosition(position => {
