@@ -6,5 +6,7 @@ let myApp = angular.module('myApp', ['ngMaterial',
                                     'app.brasilia',
                                     'app.capetown',
                                     'app.canberra',
-                                    'currentPlace'
+                                    'currentPlace',
+                                    'showDownTown',
+                                    'appHeader'
                                 ]);

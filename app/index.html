@@ -18,6 +18,8 @@
     <script src="myApp.module.js"></script>
     <script src="directives/place/currentPlace.js"></script>
     <script src="directives/weather/app.weather.js"></script>
+    <script src="directives/showDownTown.js"></script>
+    <script src="directives/header.js"></script>
 
 
     <script src="directives/towns/app.london.js"></script>
@@ -33,20 +35,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="row bg-info rounded flex" style="height: 4rem;">
-            <div class="col-2">
-                <img src="https://img.icons8.com/ios/24/000000/snowflake.png"/>
-                <span>Weather</span>
-            </div>
-            <div class="col-9">
-                <input placeholder="text" style="width: 100%">
-            </div>
-            <div class="col-1">
-                <button type="button">
-                    <img src="https://img.icons8.com/material-rounded/16/000000/search.png"/>
-                </button>
-            </div>
-        </div>
+        <app-header></app-header>
         <div class="row center">
             <div class="towns">
                 <washington-card class="washington"></washington-card>
@@ -63,6 +52,14 @@
                 <current-place></current-place>
                 <weather-card></weather-card>
             </div>
+            <br>
+            <br>
+            <div ng-class="row" >
+                <span class="center">London</span>
+                <show-down-town></show-down-town>
+            </div>
+            <br>
+            <br>
         </div>
     </div>
 </body>
