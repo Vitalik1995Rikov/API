@@ -18,6 +18,6 @@ angular.module('appHeader').controller('appHeaderCtrl', function($scope) {
                     .then(response => response.json())
                     .then(result => {$scope = result})
                     .then(() => console.log($scope))
-    $scope.valueInput = '';
+        $scope.valueInput = '';
     }
 });
