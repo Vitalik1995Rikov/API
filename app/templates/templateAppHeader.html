@@ -1,10 +1,10 @@
-<div class="row bg-info rounded flex" style="height: 4rem;">
+<div class="row bg-info rounded flex" style="height: 4rem;" ng-controller="appHeaderCtrl">
     <div class="col-2">
         <img src="https://img.icons8.com/ios/24/000000/snowflake.png"/>
         <span>Weather</span>
     </div>
     <div class="col-9">
-        <input placeholder="text" style="width: 100%" list="cities" ng-model="valueInput">
+        <input type="text" style="width: 100%" list="cities" ng-model="valueInput">
         <datalist id="cities">
             <option value="Afiny"></option>
             <option value="Amsterdam"></option>
@@ -24,7 +24,7 @@
         </datalist>
     </div>
     <div class="col-1">
-        <button type="button">
+        <button type="button" ng-click="oneTown()">
             <img src="https://img.icons8.com/material-rounded/16/000000/search.png"/>
         </button>
     </div>
