@@ -60,6 +60,9 @@ body {
 
 .card {
     background-color: #17a2b8;
+    /* background-image: url(../img/1.png); */
+    background-size: cover;
+    box-shadow: 12px 12px 2px 1px rgba(154, 154, 201, 0.2);
 }
 
 .cards {
