@@ -6,9 +6,9 @@
         </div>
         <div class='card-body'>
             <label for="">Temperature:</label>
-            <span ng-bind="(data.current.temp - 273).toFixed(1)"></span>
+            <span ng-bind="data.current.temp"></span>
             <label for="">Humidity:</label>
-            <span ng-bind="(data.current.humidity)"></span>
+            <span ng-bind="data.current.humidity"></span>
         </div>
     </div>
 
@@ -20,9 +20,9 @@
         </div>
         <div class='card-body'>
             <label for="">Temperature:</label>
-            <span ng-bind="(data.daily[0].temp.day - 273).toFixed(1)"></span>
+            <span ng-bind="data.daily[0].temp.day"></span>
             <label for="">Humidity:</label>
-            <span ng-bind="(data.daily[0].humidity)"></span>
+            <span ng-bind="data.daily[0].humidity"></span>
         </div>
     </div>
     
@@ -34,9 +34,9 @@
         </div>
         <div class='card-body'>
             <label for="">Temperature:</label>
-            <span ng-bind="(data.daily[1].temp.day - 273).toFixed(1)"></span>
+            <span ng-bind="data.daily[1].temp.day"></span>
             <label for="">Humidity:</label>
-            <span ng-bind="(data.daily[1].humidity)"></span>
+            <span ng-bind="data.daily[1].humidity"></span>
         </div>
     </div>
     
@@ -47,9 +47,9 @@
         </div>
         <div class='card-body'>
             <label for="">Temperature:</label>
-            <span ng-bind="(data.daily[2].temp.day - 273).toFixed(1)"></span>
+            <span ng-bind="data.daily[2].temp.day"></span>
             <label for="">Humidity:</label>
-            <span ng-bind="(data.daily[2].humidity)"></span>
+            <span ng-bind="data.daily[2].humidity"></span>
         </div>
     </div>
 
@@ -60,9 +60,9 @@
         </div>
         <div class='card-body'>
             <label for="">Temperature:</label>
-            <span ng-bind="(data.daily[3].temp.day - 273).toFixed(1)"></span>
+            <span ng-bind="data.daily[3].temp.day"></span>
             <label for="">Humidity:</label>
-            <span ng-bind="(data.daily[3].humidity)"></span>
+            <span ng-bind="data.daily[3].humidity"></span>
         </div>
     </div>
 </div>
